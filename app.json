@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "brick-time",
-    "slug": "brick-time",
+    "name": "itz-app",
+    "slug": "itz-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
-    "scheme": "bricktime",
+    "scheme": "itzapp",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",

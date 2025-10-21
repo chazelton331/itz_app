@@ -1,4 +1,4 @@
-# Brick Time - Initial Release Review Guide
+# ITZ App - Initial Release Review Guide
 
 This guide will help you systematically review the codebase before the initial release.
 
@@ -165,7 +165,7 @@ This guide will help you systematically review the codebase before the initial r
 
 ### AsyncStorage
 - [ ] **Data format**: Sessions stored as JSON array
-- [ ] **Key naming**: `@brick_time_sessions` is unique enough
+- [ ] **Key naming**: `@itz_app_sessions` is unique enough
 - [ ] **Migration**: No migration needed (new app)
 - [ ] **Corruption handling**: App doesn't crash if JSON is invalid
 

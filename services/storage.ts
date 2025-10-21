@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Session } from '../types/session';
 
-const SESSIONS_KEY = '@brick_time_sessions';
+const SESSIONS_KEY = '@itz_app_sessions';
 
 export const storageService = {
   // Get all sessions
