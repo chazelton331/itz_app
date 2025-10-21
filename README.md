@@ -22,7 +22,7 @@ A minimalist productivity app that helps you create focused work sessions by "br
 
 1. Navigate to the project directory:
 ```bash
-cd itz_app
+cd itz-app
 ```
 
 2. Install dependencies (if not already done):
@@ -51,7 +51,7 @@ npm start
 ## Project Structure
 
 ```
-itz_app/
+itz-app/
 ├── app/                    # Expo Router screens
 │   ├── _layout.tsx        # Root layout
 │   ├── index.tsx          # Home/Dashboard
