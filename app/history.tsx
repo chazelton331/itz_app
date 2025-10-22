@@ -34,7 +34,9 @@ export default function HistoryScreen() {
             </View>
             <View style={styles.statCard}>
               <Text style={styles.statValue}>{stats.totalSessions}</Text>
-              <Text style={styles.statLabel}>Sessions</Text>
+              <Text style={styles.statLabel}>
+                {stats.totalSessions === 1 ? 'Session' : 'Sessions'}
+              </Text>
             </View>
             <View style={styles.statCard}>
               <Text style={styles.statValue}>{completionRate}%</Text>
@@ -187,7 +189,7 @@ const styles = StyleSheet.create({
     marginBottom: theme.spacing.xs,
   },
   statLabel: {
-    fontSize: theme.fontSize.xs,
+    fontSize: 10,
     color: theme.colors.gray[400],
     textTransform: 'uppercase',
     letterSpacing: 0.5,

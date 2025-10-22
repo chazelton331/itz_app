@@ -89,12 +89,17 @@ export const statsService = {
     return `${minutes}:${secs.toString().padStart(2, '0')}`;
   },
 
-  // Format seconds to human readable (e.g., "2h 15m")
+  // Format seconds to human readable (e.g., "2h 15m", "3d 5h")
   formatDurationHuman(seconds: number): string {
-    const hours = Math.floor(seconds / 3600);
+    const days = Math.floor(seconds / 86400);
+    const hours = Math.floor((seconds % 86400) / 3600);
     const minutes = Math.floor((seconds % 3600) / 60);
 
-    if (hours > 0 && minutes > 0) {
+    if (days > 0 && hours > 0) {
+      return `${days}d ${hours}h`;
+    } else if (days > 0) {
+      return `${days}d`;
+    } else if (hours > 0 && minutes > 0) {
       return `${hours}h ${minutes}m`;
     } else if (hours > 0) {
       return `${hours}h`;
